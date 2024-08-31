@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="public/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/83b055e62b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bodycontainer">
+        <div class="upper">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+            <div class="signupLinks">
+                <a href="" class="singIn">SIGN IN</a>
+                <a href="" class="singUp">SIGN UP</a>
+            </div>
+        </div>
+
+        <!-- ends here -->
+
+
+        <!-- logo and navbar section -->
+
+        <div class="navbar">
+            <div class="logo">
+                <a href=""><img src="public/icon.png" alt=""></a>
+            </div>
+            <div class="list">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="about.html" id="about">About</a></li>
+                <li><a href="products.html" id="products">Products</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+                <a href="addtocart.html" title="Cart" class="cartLogo">
+                    <li id="cartValue"><i class="fa-solid fa-cart-shopping"></i>0</li>
+                </a>
+            </div>
+        </div>
+
+        <!-- ends here  -->
+
+        <!-- cart section start here  -->
+
+        <div class="containerOfCart">
+            <template class="templateElement">
+                <div class="cartProduct" id="cardValue">
+                    <div class="catogery">computer
+                    </div>
+                    <div class="img"><img class="imagecard" src="public/laptop.jpeg" alt="" width="100px"
+                            height="100px"></div>
+                    <h3 class="productName">Laptop</h3>
+                    <div class="price">999.99</div>
+                    <div class="stockElement">
+                        <button class="increment">+</button>
+                        <p class="productQunatity">1</p>
+                        <button class="decrement">-</button>
+                    </div>
+                    <div class="remove">
+                        <button class="removeBtn">Remove</button>
+                    </div>
+                </div>
+
+            </template>
+        </div>
+
+
+        <!-- total starts here  -->
+        <div class="final">
+            <div class="box">
+                <p>Selected Offer Summary </p>
+                <div class="totalLower">
+                    <div class="subtotal">
+                        <span>Sub Total:</span>
+                        <span class="subTotalPrice">444</span>
+                    </div>
+                    <div class="tax">
+                        <span>tax</span>
+                        <span class="taxvalue">50</span>
+                    </div>
+                    <div class="total">
+                        <span>Final Total:</span>
+                        <span class="finalTotal">2222</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ends here  -->
+
+        <!-- footer  -->
+
+        <footer>
+            <div class="footer">
+                <div class="leftside5">
+                    <img src="public/icon.png" alt="" width="70px">
+                    <p>Welcome to Swami EcomStore, your ultimate destination for cutting-edge gadgets!</p>
+                </div>
+                <div class="rightside5">
+                    <div class="shopping">
+                        <h2>Shopping</h2>
+                        <a href="">Computer Store</a>
+                        <a href="">Laptop Store</a>
+                        <a href="">Accessories</a>
+                        <a href="">Sales & Discount</a>
+                    </div>
+
+                    <div class="Experience">
+                        <h2>Experience</h2>
+                        <a href="">Contact Us</a>
+                        <a href="">Payment Method</a>
+                        <a href="">Delivery</a>
+                        <a href="">Return and Exchange</a>
+                    </div>
+
+                    <div class="newsletter">
+                        <h2>Newsletter</h2>
+                        <p>Be the first to know about new
+                            arrivals, sales & promos!</p>
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>Designed by Himanshu</p>
+        </footer>
+    </div>
+
+    <script type="module" src="showAddToCartCards.js"></script>
+</body>
+
+</html>
