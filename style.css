@@ -803,3 +803,35 @@ form button{
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width:650px) {
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+   .herosection .leftside{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .Middle2ndPart{
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width:480px)  {
+  .bodycontainer{
+    align-items: center;
+    margin-left: 30px;
+  }
+  .navbar{
+    border: 2px solid red;
+    margin-bottom: 30px;
+  }
+}
